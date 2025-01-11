@@ -1,0 +1,44 @@
+<div class="customcard" id="projects">
+    <div class="ds-top"></div>
+    <div class="avatar-holder">
+      <img src="{{item.img}}" alt="">
+    </div>
+    <div class="name">
+      <a href="{{item.link}}" target="_blank"> {{item.name}} </a>
+    </div>
+    <div class="button">
+      <a href="{{item.link}}" 
+         class="btn" onmousedown="follow();" target="_blank">
+        View project
+        <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="ds-info" >
+      <p>
+         {{item.description}}
+      </p>
+    </div>
+    <div class="ds-skill">
+      <h6>Tools used<i class="fa fa-code" aria-hidden="true"></i></h6>
+      <div class="skill html" *ngFor="let skill of item.stack">
+        <h6><i class="fa fa-cog"></i> {{skill}} </h6>
+      </div>
+      <!-- <div class="skill css">
+        <h6><i class="fab fa-css3-alt"></i> CSS3 </h6>
+      </div>
+      <div class="skill javascript">
+        <h6>
+          <i class="fab fa-js"></i>
+          Angular  
+        </h6>
+  
+      </div>
+      <div class="skill javascript">
+        <h6>
+          <i class="fab fa-js"></i>
+            APIrtc 
+        </h6>
+  
+      </div> -->
+     
+    </div>
+  </div>

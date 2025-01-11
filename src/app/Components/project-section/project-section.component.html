@@ -1,0 +1,25 @@
+ <!-- ------- Feature Section Start ---------- -->
+ <section id="projects" class="feature-section p-8 pb-5" data-scroll-index="1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7">
+          <div class="section-title text-center mb-30">
+            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Awsome <span> Projects</span></h1>
+            <p class="wow fadeInUp" data-wow-delay=".4s"> Here are some of the notable projects ive worked on alone and in teams</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mx-auto wow fadeInLeftBig">
+        <div class="col-lg-3 m-2" *ngFor="let project of projects">
+           <app-project-card [item]="project"></app-project-card>
+        </div>
+        <!-- <div class="col-lg-3 m-2">
+            <app-project-card></app-project-card>
+        </div>
+        <div class="col-lg-3 m-2">
+          <app-project-card></app-project-card>
+        </div> -->
+      </div>
+    </div>
+</section>
+  <!-- ------- Feature Section End ---------- -->
